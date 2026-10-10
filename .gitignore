@@ -1,0 +1,5 @@
+/pipeline/pandas/coinbase.csv
+__pycache__/
+*.pyc
+.venv/
+/pipeline/pandas/coinbase.csv

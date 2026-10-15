@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Plot a histogram of student grades."""
 

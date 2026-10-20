@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Find Star Wars starships by passenger capacity."""
 

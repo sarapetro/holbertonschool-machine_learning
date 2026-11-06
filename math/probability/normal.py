@@ -36,3 +36,13 @@ class Normal:
         pi = 3.1415926536
         z = self.z_score(x)
         return e ** (-0.5 * z ** 2) / (self.stddev * (2 * pi) ** 0.5)
+
+    def cdf(self, x):
+        """Approximate the CDF using a five-term error-function expansion."""
+        pi = 3.1415926536
+        z = (x - self.mean) / (self.stddev * (2 ** 0.5))
+        series = z - z ** 3 / 3 + z ** 5 / 10
+        series -= z ** 7 / 42
+        series += z ** 9 / 216
+        erf = (2 / (pi ** 0.5)) * series
+        return 0.5 * (1 + erf)

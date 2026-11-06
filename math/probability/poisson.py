@@ -47,5 +47,3 @@ class Poisson:
             probability += self.pmf(i)
 
         return probability
-
-
